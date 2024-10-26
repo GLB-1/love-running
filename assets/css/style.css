@@ -19,6 +19,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* Header */
 header {
     background-color: #fff;
@@ -30,19 +37,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    
+
 }
 
-/* Nav toggle */         /* check boxes have a pseudo class that indicates when they are checked */
-#nav-toggle:checked~nav {    
-    display: block;      /* the tilde "~" indicates we want to target the adjoining nav element */
+/* Nav toggle */
+/* check boxes have a pseudo class that indicates when they are checked */
+#nav-toggle:checked~nav {
+    display: block;
+    /* the tilde "~" indicates we want to target the adjoining nav element */
 }
 
 #nav-toggle {
     display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
     font-size: 2rem;
 }
 
@@ -51,12 +60,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 
 #menu {
     font-size: 110%;
@@ -97,6 +101,23 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #fff;
 }
 
 /* Footer */
@@ -116,20 +137,21 @@ main {
 
 /* Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
+
     /* Header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
     }
-    
+
     #menu {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -149,10 +171,16 @@ main {
         /* Push main content down to accomodate larger header */
         margin-top: 79px;
     }
+
+    #cover-text{
+        width: 300px;
+        right: 50px;
+    }
 }
 
 /* Media query: laptops and desktops(992px and up)*/
 @media screen and (min-width: 992px) {
+
     /* underline for links when they are hovered */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
