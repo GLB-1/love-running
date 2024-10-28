@@ -166,6 +166,13 @@ main {
     justify-content: center;
 }
 
+/* Meet ups section*/
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
