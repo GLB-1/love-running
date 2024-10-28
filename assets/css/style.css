@@ -135,10 +135,6 @@ main {
 
 }
 
-#benefits {
-    margin-top: 20px;
-}
-
 #benefits-physical>div,
 #benefits-mental>div {
     line-height: 22px;
@@ -271,7 +267,7 @@ main {
         flex: 1;
      }
 
-     /* sets the image between the two benefits divs (doesn't stay at the end) */
+     /* sets the image between the two benefits divs (doesn't stay at the end) by changing orders */
      #benefits-image {
         order: 0;
      }
