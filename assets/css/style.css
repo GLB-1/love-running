@@ -197,8 +197,13 @@ main {
 /* Gallery page images */
 #photos img {
     width: 100%;
+    line-height: 1em;
 }
 
+/* Remove the automatically added white lines between images due to auto line height */
+#photos{
+    line-height: 0;
+}
 
 /* Footer */
 #social-networks {
