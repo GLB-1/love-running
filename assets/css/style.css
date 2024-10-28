@@ -66,8 +66,6 @@ header a {
     color: inherit;
 }
 
-
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -94,7 +92,7 @@ nav {
     top: 100%;
 }
 
-/* Main content */
+/* Main content home page */
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -194,6 +192,11 @@ main {
 #times h3 {
     /* Override the text colour set in h3 general styles */
     color: #fafafa;
+}
+
+/* Gallery page images */
+#photos img {
+    width: 100%;
 }
 
 
